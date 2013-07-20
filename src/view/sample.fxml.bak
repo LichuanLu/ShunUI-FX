@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.sun.javafx.scene.control.skin.EndButton?>
+<?import com.sun.javafx.scene.control.skin.LabeledText?>
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="root_panel" prefHeight="600" prefWidth="800"  xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.Controller"
+         stylesheets="temp.css">
+    <top>
+        <BorderPane prefWidth="800" prefHeight="200">
+            <HBox id="top_h">
+                <Label>ShunUI</Label>
+            </HBox>
+        </BorderPane>
+
+    </top>
+    <left>
+        <BorderPane prefWidth="300">
+            <VBox id="left_fp">
+                <Label>test</Label>
+            </VBox>
+        </BorderPane>
+
+    </left>
+    <center>
+        <FlowPane id="center_fp">
+            <Label text="test" />
+            <Button text="click"  onAction="#click_handler" />
+        </FlowPane>
+    </center>
+
+
+</BorderPane>
+
