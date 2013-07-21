@@ -19,6 +19,7 @@
 
 <?import view.WindowButtons?>
 <?import view.SearchBox?>
+<?import view.PageArea?>
 <CusBorderPane id="root_panel" prefHeight="700.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.Controller">
 
 
@@ -30,20 +31,23 @@
                 <TreeView fx:id="tree" id="page-tree"></TreeView>
             </center>
         </BorderPane>
-        <TabPane id="source-tabs">
-            <Tab text="Left Brain" closable="false">
-                <BorderPane fx:id="right_pane">
-                    <!--<Label text="test" />-->
-                    <!--<Button onAction="#click_handler" text="click" />-->
-                </BorderPane>
-            </Tab>
-            <Tab text="Right Brain" closable="false">
-                <BorderPane>
+        <!--<TabPane id="source-tabs" fx:id="tp">-->
+            <!--<Tab text="Left Brain" closable="false">-->
+                <!--<BorderPane fx:id="right_pane">-->
+                    <!--&lt;!&ndash;<Label text="test" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<Button onAction="#click_handler" text="click" />&ndash;&gt;-->
+                <!--</BorderPane>-->
+            <!--</Tab>-->
+            <!--<Tab text="Right Brain" closable="false">-->
+                <!--<BorderPane>-->
 
-                </BorderPane>
-            </Tab>
+                <!--</BorderPane>-->
+            <!--</Tab>-->
 
-        </TabPane>
+        <!--</TabPane>-->
+        <PageArea fx:id="pa" id="page-area">
+
+        </PageArea>
 
 
 

@@ -14,7 +14,7 @@ public class LineExtraValues <Y> {
     private Y high;
     private Y low;
 
-    public LineExtraValues(Y high, Y low) {
+    public LineExtraValues(Y low, Y high) {
         this.high = high;
         this.low = low;
     }

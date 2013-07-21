@@ -1,5 +1,7 @@
 package models;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: labuser
@@ -13,7 +15,7 @@ public class Patients {
     private String name;
     private String gender;
     private int age;
-    private PatientsResults patientsResults;
+    private List<PatientsResults> patientsResults;
     private int status;
 
 
