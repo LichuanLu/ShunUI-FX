@@ -4,6 +4,7 @@ import models.AreaData;
 import models.LineExtraValues;
 import models.PatientsResults;
 
+import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -66,9 +67,9 @@ public class PatientsResultsDao {
 
 		dAtlas CortexMap = new dAtlas();
 		ImportData data = new ImportData();
-        URL url = getClass().getResource("lh.aparc.a2009s.stats");
-		data.ReadData(url, CortexMap, 'l');
-		
+        InputStream input = this.getClass().getResourceAsStream("lh.aparc.a2009s.stats");
+		data.ReadData(input, CortexMap, 'l');
+		//System.out.println(url);
 
 		for (int i = 0; i < CortexMap.Lh.size(); i++) {
 
@@ -99,8 +100,8 @@ public class PatientsResultsDao {
 		
 		dAtlas CortexMap = new dAtlas();
 		ImportData data = new ImportData();
-        URL url = getClass().getResource("rh.aparc.a2009s.stats");
-        data.ReadData(url, CortexMap, 'r');
+        InputStream input = this.getClass().getResourceAsStream("rh.aparc.a2009s.stats");
+        data.ReadData(input, CortexMap, 'r');
 		
 		for (int i = 0; i < CortexMap.Rh.size(); i++) {
 
@@ -151,8 +152,8 @@ public class PatientsResultsDao {
 
         dAtlas CortexMap = new dAtlas();
         ImportData data = new ImportData();
-        URL url = getClass().getResource("lh.aparc.a2009s.stats");
-        data.ReadData(url, CortexMap, 'l');
+        InputStream input = this.getClass().getResourceAsStream("lh.aparc.a2009s.stats");
+        data.ReadData(input, CortexMap, 'l');
         for (int i = 0; i < CortexMap.Lh.size(); i++) {
             double low = (Math.random())*1000;
             double high =  (Math.random())*1000+1000;
@@ -185,8 +186,8 @@ public class PatientsResultsDao {
 //				new LineExtraValues<Double>(1400.5, 2600.5));
         dAtlas CortexMap = new dAtlas();
         ImportData data = new ImportData();
-        URL url = getClass().getResource("lh.aparc.a2009s.stats");
-        data.ReadData(url, CortexMap, 'l');
+        InputStream input = this.getClass().getResourceAsStream("lh.aparc.a2009s.stats");
+        data.ReadData(input, CortexMap, 'l');
         for (int i = 0; i < CortexMap.Lh.size(); i++) {
             double low = (Math.random());
             double high =  (Math.random())+3;
@@ -216,8 +217,8 @@ public class PatientsResultsDao {
 //				1400.5, 2600.5));
         dAtlas CortexMap = new dAtlas();
         ImportData data = new ImportData();
-        URL url = getClass().getResource("lh.aparc.a2009s.stats");
-        data.ReadData(url, CortexMap, 'l');
+        InputStream input = this.getClass().getResourceAsStream("/res/lh.aparc.a2009s.stats");
+        data.ReadData(input, CortexMap, 'l');
         for (int i = 0; i < CortexMap.Lh.size(); i++) {
             double low = (Math.random())*1000;
             double high =  (Math.random())*1000+1000;
@@ -242,8 +243,8 @@ public class PatientsResultsDao {
 
         dAtlas CortexMap = new dAtlas();
         ImportData data = new ImportData();
-        URL url = getClass().getResource("lh.aparc.a2009s.stats");
-        data.ReadData(url, CortexMap, 'l');
+        InputStream input = this.getClass().getResourceAsStream("/res/lh.aparc.a2009s.stats");
+        data.ReadData(input, CortexMap, 'l');
         for (int i = 0; i < CortexMap.Lh.size(); i++) {
             int temp = (int)((Math.random())*2 + 1) ;
             int temp2 = (int)Math.pow(-1,temp);
@@ -266,8 +267,8 @@ public class PatientsResultsDao {
 //		thicknessZMap.put("G_and_S_transv_frontopol", 0.3);
         dAtlas CortexMap = new dAtlas();
         ImportData data = new ImportData();
-        URL url = getClass().getResource("lh.aparc.a2009s.stats");
-        data.ReadData(url, CortexMap, 'l');
+        InputStream input = this.getClass().getResourceAsStream("/res/lh.aparc.a2009s.stats");
+        data.ReadData(input, CortexMap, 'l');
         for (int i = 0; i < CortexMap.Lh.size(); i++) {
             int temp = (int)((Math.random())*2 + 1) ;
             int temp2 = (int)Math.pow(-1,temp);
@@ -289,8 +290,8 @@ public class PatientsResultsDao {
 //		surfaceZMap.put("G_and_S_transv_frontopol", 0.2);
         dAtlas CortexMap = new dAtlas();
         ImportData data = new ImportData();
-        URL url = getClass().getResource("lh.aparc.a2009s.stats");
-        data.ReadData(url, CortexMap, 'l');
+        InputStream input = this.getClass().getResourceAsStream("/res/lh.aparc.a2009s.stats");
+        data.ReadData(input, CortexMap, 'l');
         for (int i = 0; i < CortexMap.Lh.size(); i++) {
             int temp = (int)((Math.random())*2 + 1) ;
             int temp2 = (int)Math.pow(-1,temp);

@@ -1,9 +1,6 @@
 package com.shunui.database;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.BufferedReader;
+import java.io.*;
 import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,18 +11,18 @@ public class ImportData {
 
 	}
 
-	public void ReadData(URL fileName, dAtlas patient, char hemi) {
+	public void ReadData(InputStream input, dAtlas patient, char hemi) {
 
 		
 		if (patient == null) patient = new dAtlas();
 		 
 
-		File file = new File(fileName.getPath());
-		if (file.exists() && file.canRead()) {
-			FileReader fr;
+		//File file = new File(fileName.getPath());
+		if (input != null) {
+			InputStreamReader ir;
 			try {
-				fr = new FileReader(file);
-				BufferedReader br = new BufferedReader(fr);
+                ir = new InputStreamReader(input);
+				BufferedReader br = new BufferedReader(ir);
 				// String str;
 				// "#" ACII 35
 				String str = null;
