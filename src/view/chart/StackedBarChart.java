@@ -416,7 +416,7 @@ public class StackedBarChart<X,Y> extends XYChart<X,Y> {
                     }
 
                     //modify
-                    yData.add(totalY*1.5);
+                    yData.add(totalY*1.1);
                     catIndex++;
                 }
             }

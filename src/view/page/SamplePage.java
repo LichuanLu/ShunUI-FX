@@ -121,11 +121,11 @@ public class SamplePage extends Page {  private static WebEngine engine = null;
             final VBox main = new VBox(8);
             main.getStyleClass().add("sample-page");
             // create header
-            Label leftHeader = new Label(getName()+ "Statistic Analysis Chart - Left");
+            Label leftHeader = new Label(getName()+ " Statistic Analysis Chart - Left");
             leftHeader.getStyleClass().add("page-header");
             main.getChildren().add(leftHeader);
             //final Sample sample = (Sample)sampleClass.newInstance();
-            if(getName().equals("Volumn")){
+            if(getName().equals("GrayVolume")){
                 lChartView = new ChartView(patientsResultsDao.getSingleLeftResults(0),getName(),patientsResultsDao.getVolumnMap(null),patientsResultsDao.getVolumnZMap(null));
                 rChartView = new ChartView(patientsResultsDao.getSingleRightResults(0),getName(),patientsResultsDao.getVolumnMap(null),patientsResultsDao.getVolumnZMap(null));
 

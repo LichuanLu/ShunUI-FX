@@ -129,6 +129,12 @@
     -fx-background-image: url("../images/window-expand-over.png");
 }
 
+#window-resize-button {
+    -fx-background-image: url("../images/window-corner.png");
+    -fx-background-position: right 1px bottom 1px;
+    -fx-background-repeat: no-repeat;
+}
+
 /* ====== Bar line chart =========================================================== */
 .candlestick-average-line {
     -fx-stroke: #ce3003;

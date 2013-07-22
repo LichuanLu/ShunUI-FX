@@ -74,7 +74,7 @@ public class Pages {
 
         root.getChildren().get(0).getChildren().get(0).getChildren().addAll(Arrays.asList(
 
-                new SamplePage(0,"Volumn"),
+                new SamplePage(0,"GrayVolume"),
                 new SamplePage(0,"Thickness"),
                 new SamplePage(0,"Surface")
 

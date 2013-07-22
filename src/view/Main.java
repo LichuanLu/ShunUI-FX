@@ -31,7 +31,7 @@ public class Main extends Application {
         CusBorderPane root = (CusBorderPane)fxmlLoader.load();
         root.getStyleClass().add("application");
         // create window resize button
-        windowResizeButton = new WindowResizeButton(primaryStage, 1280,700);
+        windowResizeButton = new WindowResizeButton(primaryStage, 1280,800);
         root.setWindowResizeButton(windowResizeButton);
         windowResizeButton.setManaged(false);
         root.getChildren().add(windowResizeButton);
@@ -41,7 +41,7 @@ public class Main extends Application {
 
         primaryStage.setTitle("ShunUI");
          boolean is3dSupported = Platform.isSupported(ConditionalFeature.SCENE3D);
-        scene = new Scene(root, 1280, 700, is3dSupported);
+        scene = new Scene(root, 1280, 800, is3dSupported);
         if (is3dSupported) {
             //RT-13234
             scene.setCamera(new PerspectiveCamera());

@@ -63,7 +63,7 @@ public class ChartView {
         while(index<len){
              areaData =  ((AreaData)chartData.get(index));
              areas[index] = areaData.getAreaName();
-             if(name.equals("Volumn")){
+             if(name.equals("GrayVolume")){
                  series1.getData().add(new XYChart.Data<String,Number>(areas[index], areaData.getVolumn(),high_low_map.get(areas[index])));
 
              }else if(name.equals("Thickness")){
